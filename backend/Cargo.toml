@@ -1,0 +1,21 @@
+[package]
+name = "checky"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+jwt-simple = "0.11.0"
+axum = "0.5.15"
+dotenv = "0.15.0"
+nanoid = "0.4.0"
+
+[dependencies.diesel_codegen]
+features = ["postgres"]
+version = "*"
+
+[dependencies.diesel]
+features = ["postgres"]
+git = "https://github.com/diesel-rs/diesel"
+rev = "0ce9179facd7defaef70b3b3563ba1c69dd27d48"

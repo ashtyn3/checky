@@ -1,0 +1,4 @@
+#!/bin/bash
+
+diesel print-schema > src/schema.rs
+diesel_ext   --model > src/models.rs 
